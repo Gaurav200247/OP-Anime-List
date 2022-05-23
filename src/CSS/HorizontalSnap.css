@@ -1,0 +1,44 @@
+.snap-container {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scroll-snap-align: start;
+  gap: 1rem;
+  overflow-y: auto;
+  width: 100%;
+}
+.single-snap-block {
+  width: 13rem;
+  height: 20rem;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 8px;
+}
+.snap-img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.single-snap-block:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.anime-snap-container {
+  position: relative;
+}
+.snap-btn-container {
+  position: absolute;
+  right: 0%;
+  bottom: 1%;
+  background-color: rgb(44, 44, 44);
+  height: 21.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.snap-btn {
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 20px;
+}
